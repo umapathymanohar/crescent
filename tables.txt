@@ -1,0 +1,83 @@
+
+
+Laravel Generators for Crescent
+
+
+productmaster
+
+php artisan generate:scaffold productmaster --fields="productCode:string, productName:string, productCategoryName:string, productPrice:string"
+
+
+____________________________________________________________________________
+
+customermaster
+
+php artisan generate:scaffold customermaster --fields="customerName:string, customerAddressLine1:string, customerAddressLine2:string, customerCity:string, customerState:string, customerCountry:string, customerPinCode:string, customerEmail:string, customerCSTNumber:string, customerVATNumber:string, customerSTNumber:string"
+
+
+____________________________________________________________________________
+
+suppliermaster
+
+php artisan generate:scaffold suppliermaster --fields="supplierName:string, supplierAddressLine1:string, supplierAddressLine2:string, supplierCity:string, supplierState:string, supplierCountry:string, supplierPinCode:string, supplierEmail:string, supplierCSTNumber:string, supplierVATNumber:string, supplierSTNumber:string"
+
+__________________________________________________________________
+
+sales
+
+php artisan generate:scaffold sales --fields="customerId:string, saleDate:string, saleTotalprice:string"
+
+____________________________________________________
+
+saledetails
+
+php artisan generate:scaffold saledetails --fields="productId:string, quantity:string, price:string"
+
+
+
+____________________________________________________
+
+stock
+
+php artisan generate:scaffold stock --fields="productId:string, quantityInout:string, date:string"
+
+____________________________________________________
+
+salereturns
+
+php artisan generate:scaffold salereturns --fields="saleId:string, returnDate:string"
+
+____________________________________________________
+
+salereturndetails
+
+php artisan generate:scaffold salereturndetails --fields="productId:string, quantity:string, defectiveNumber:string"
+
+____________________________________________________
+
+purchasereturns
+
+php artisan generate:scaffold purchasereturns --fields="purchaseId:string, returnDate:string"
+
+____________________________________________________
+
+purchasereturndetails
+
+php artisan generate:scaffold purchasereturndetails --fields="productId:string, quantity:string, defectiveNumber:string"
+
+____________________________________________________
+
+purchase
+
+php artisan generate:scaffold purchase --fields="customerId:string, purchaseDate:string, purchaseTotalprice:string"
+
+____________________________________________________
+
+purchasedetails
+
+php artisan generate:scaffold purchasedetails --fields="productId:string, quantity:string, price:string"
+
+
+
+
+

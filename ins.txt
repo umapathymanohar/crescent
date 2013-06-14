@@ -1,0 +1,293 @@
+
+C:\xampp\htdocs\inventory>composer update
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+  - Installing nikic/php-parser (dev-master 5ccf619)
+    Loading from cache
+
+  - Installing mockery/mockery (dev-master 7073980)
+    Loading from cache
+
+  - Installing symfony/http-kernel (2.3.x-dev 99b9acb)
+    Downloading: connection...
+
+
+  [Composer\Downloader\TransportException]
+  The "https://api.github.com/repos/symfony/HttpKernel/zipball/99b9acb3fc7590
+  e0e4717b6ca03c14a292c70f1f" file could not be downloaded (HTTP/1.0 500 Inte
+  rnal Server Error)
+
+
+
+update [--prefer-source] [--prefer-dist] [--dry-run] [--dev] [--no-dev] [--lock]
+ [--no-custom-installers] [--no-scripts] [--no-progress] [-v|vv|vvv|--verbose] [
+-o|--optimize-autoloader] [packages1] ... [packagesN]
+
+
+
+C:\xampp\htdocs\inventory>composer update
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+  - Removing jasonlewis/basset (dev-master d5ddbb0)
+  - Removing kriswallsmith/assetic (1.1.x-dev dfcbf3d)
+  - Removing zizaco/entrust (dev-master 347f770)
+  - Removing zizaco/confide (dev-master bbda889)
+  - Removing laravelbook/ardent (dev-master 1a778d2)
+  - Removing symfony/process (2.3.x-dev v2.3.0-RC1)
+  - Installing symfony/process (2.3.x-dev v2.3.1)
+    Loading from cache
+
+  - Removing symfony/debug (2.3.x-dev v2.3.0)
+  - Installing symfony/debug (2.3.x-dev v2.3.1)
+    Loading from cache
+
+  - Removing symfony/http-foundation (2.3.x-dev v2.3.0-RC1)
+  - Installing symfony/http-foundation (2.3.x-dev v2.3.1)
+    Loading from cache
+
+  - Removing symfony/http-kernel (2.3.x-dev 4f0f648)
+  - Installing symfony/http-kernel (2.3.x-dev 99b9acb)
+    Downloading: connection...
+
+
+  [Composer\Downloader\TransportException]
+  The "https://api.github.com/repos/symfony/HttpKernel/zipball/99b9acb3fc7590
+  e0e4717b6ca03c14a292c70f1f" file could not be downloaded (HTTP/1.0 500 Inte
+  rnal Server Error)
+
+
+
+update [--prefer-source] [--prefer-dist] [--dry-run] [--dev] [--no-dev] [--lock]
+ [--no-custom-installers] [--no-scripts] [--no-progress] [-v|vv|vvv|--verbose] [
+-o|--optimize-autoloader] [packages1] ... [packagesN]
+
+
+
+C:\xampp\htdocs\inventory>php artisan
+
+Warning: require(C:\xampp\htdocs\inventory\vendor/kriswallsmith/assetic/src/func
+tions.php): failed to open stream: No such file or directory in C:\xampp\htdocs\
+inventory\vendor\composer\autoload_real.php on line 44
+
+Fatal error: require(): Failed opening required 'C:\xampp\htdocs\inventory\vendo
+r/kriswallsmith/assetic/src/functions.php' (include_path='.;C:\xampp\php\PEAR')
+in C:\xampp\htdocs\inventory\vendor\composer\autoload_real.php on line 44
+
+C:\xampp\htdocs\inventory>cd ..
+
+C:\xampp\htdocs>cd crescent
+
+C:\xampp\htdocs\crescent>php srtisan
+Could not open input file: srtisan
+
+C:\xampp\htdocs\crescent>php artisan
+Laravel Framework version 4.0.4
+
+Usage:
+  [options] command [arguments]
+
+Options:
+  --help           -h Display this help message.
+  --quiet          -q Do not output any message.
+  --verbose        -v|vv|vvv Increase the verbosity of messages: 1 for normal ou
+tput, 2 for more verbose output and 3 for debug
+  --version        -V Display this application version.
+  --ansi              Force ANSI output.
+  --no-ansi           Disable ANSI output.
+  --no-interaction -n Do not ask any interactive question.
+  --env               The environment the command should run under.
+
+Available commands:
+  basset                Interact with the Basset package
+  changes               Display the framework change list
+  clear-compiled        Remove the compiled class file
+  down                  Put the application into maintenance mode
+  dump-autoload         Regenerate framework autoload files
+  help                  Displays help for a command
+  list                  Lists commands
+  migrate               Run the database migrations
+  optimize              Optimize the framework for better performance
+  routes                List all registered routes
+  serve                 Serve the application on the PHP development server
+  tinker                Interact with your application
+  up                    Bring the application out of maintenance mode
+  workbench             Create a new package workbench
+asset
+  asset:publish         Publish a package's assets to the public directory
+auth
+  auth:reminders        Create a migration for the password reminders table
+basset
+  basset:build          Build asset collections
+cache
+  cache:clear           Flush the application cache
+command
+  command:make          Create a new Artisan command
+confide
+  confide:controller    Creates a controller template that uses Confide.
+  confide:migration     Creates a migration following the Confide especification
+s.
+  confide:routes        Append the default Confide controller routes to the rout
+es.php
+config
+  config:publish        Publish a package's configuration to the application
+controller
+  controller:make       Create a new resourceful controller
+db
+  db:seed               Seed the database with records
+entrust
+  entrust:migration     Creates a migration following the Entrust especification
+s.
+generate
+  generate:controller   Generate a new controller.
+  generate:form         Dump form HTML for a model
+  generate:migration    Generate a new migration.
+  generate:model        Generate a new model.
+  generate:resource     Generate a resource.
+  generate:scaffold     Generate scaffolding for a resource.
+  generate:seed         Generate a seed file.
+  generate:test         Generate a PHPUnit test class.
+  generate:view         Generate a new view.
+key
+  key:generate          Set the application key
+migrate
+  migrate:install       Create the migration repository
+  migrate:make          Create a new migration file
+  migrate:refresh       Reset and re-run all migrations
+  migrate:reset         Rollback all database migrations
+  migrate:rollback      Rollback the last database migration
+queue
+  queue:listen          Listen to a given queue
+  queue:subscribe       Subscribe a URL to an Iron.io push queue
+  queue:work            Process the next job on a queue
+session
+  session:table         Create a migration for the session database table
+
+C:\xampp\htdocs\crescent>php artisan generate:scaffold testing --fields="name:st
+ring"
+Created app/models/Testing.php
+Created app/controllers/TestingsController.php
+Created C:\xampp\htdocs\crescent\app/views/testings/index.blade.php
+Created C:\xampp\htdocs\crescent\app/views/testings/show.blade.php
+Created C:\xampp\htdocs\crescent\app/views/testings/create.blade.php
+Created C:\xampp\htdocs\crescent\app/views/testings/edit.blade.php
+Could not create C:\xampp\htdocs\crescent\app/views/layouts/scaffold.blade.php
+Generating optimized class loader
+Compiling common classes
+Created app/database/migrations/Create_testings_table.php
+Created app/database/seeds/TestingsTableSeeder.php
+
+
+
+  [Illuminate\Filesystem\FileNotFoundException]
+  File does not exist at path C:\xampp\htdocs\crescent\app/database/seeds/Dat
+  abaseSeeder.php
+
+
+
+generate:scaffold [--path[="..."]] [--fields[="..."]] name
+
+
+
+C:\xampp\htdocs\crescent>php artisan migrate
+Migrated: 2013_06_13_071207_create_testings_table
+
+C:\xampp\htdocs\crescent>php artisan generate:scaffold productmaster --fields="p
+roductCode:string, productName:string, productCategoryName:string, productPrice:
+string"
+Created app/models/Productmaster.php
+Created app/controllers/ProductmastersController.php
+Created C:\xampp\htdocs\crescent\app/views/productmasters/index.blade.php
+Created C:\xampp\htdocs\crescent\app/views/productmasters/show.blade.php
+Created C:\xampp\htdocs\crescent\app/views/productmasters/create.blade.php
+Created C:\xampp\htdocs\crescent\app/views/productmasters/edit.blade.php
+Could not create C:\xampp\htdocs\crescent\app/views/layouts/scaffold.blade.php
+Generating optimized class loader
+Compiling common classes
+Created app/database/migrations/Create_productmasters_table.php
+Created app/database/seeds/ProductmastersTableSeeder.php
+Updated C:\xampp\htdocs\crescent\app/database/seeds/DatabaseSeeder.php
+Could not create app/tests/controllers/ProductmastersTest.php
+Updated app/routes.php
+
+C:\xampp\htdocs\crescent>php artisan migrate
+Migrated: 2013_06_13_072018_create_productmasters_table
+
+C:\xampp\htdocs\crescent>do it for all tables. . follow the naming pattern.. all
+ small for table name field name should be camelcase with starting lower case, a
+ll auto increment id will be generated by laravel no need to mention it.. forieg
+n key should be mentioned as product_id.. underscore should be used only in this
+
+'do' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\xampp\htdocs\crescent>ok
+'ok' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\xampp\htdocs\crescent>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
